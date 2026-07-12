@@ -73,6 +73,28 @@ st.markdown("""
         display: none !important;
     }
     
+    /* Force high contrast text colors for navigation menu and widgets */
+    div[role="radiogroup"] label * {
+        color: rgba(255, 255, 255, 0.85) !important;
+        text-shadow: none !important;
+    }
+    div[role="radiogroup"] label[data-checked="true"] * {
+        color: #ffffff !important;
+        font-weight: 600 !important;
+    }
+    
+    [data-testid="stWidgetLabel"] p, 
+    [data-testid="stMarkdownContainer"] p,
+    [data-testid="stMarkdownContainer"] li,
+    .stMarkdown,
+    label {
+        color: #e2e8f0 !important;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff !important;
+    }
+    
     /* Advanced Animations */
     @keyframes slideUpFade {
         0% { opacity: 0; transform: translateY(30px); }
