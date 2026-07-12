@@ -94,6 +94,49 @@ st.markdown("""
     h1, h2, h3, h4, h5, h6 {
         color: #ffffff !important;
     }
+
+    /* Fix Metric Cards values readability */
+    [data-testid="stMetricValue"], [data-testid="stMetricValue"] * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+    [data-testid="stMetricLabel"], [data-testid="stMetricLabel"] * {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+    
+    /* Fix Input fields (Text, Number, TextArea) and Selectboxes values */
+    .stTextInput input, 
+    .stNumberInput input, 
+    .stTextArea textarea,
+    .stSelectbox [data-baseweb="select"] * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    /* Style selectbox dropdown lists (popovers) */
+    div[data-baseweb="popover"] ul {
+        background-color: #1e293b !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+    div[data-baseweb="popover"] li {
+        color: #ffffff !important;
+    }
+    div[data-baseweb="popover"] li:hover {
+        background-color: rgba(168, 85, 247, 0.3) !important;
+    }
+
+    /* Chat message bubble styling */
+    [data-testid="stChatMessage"] {
+        background: rgba(30, 41, 59, 0.4) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 15px !important;
+        padding: 15px !important;
+    }
+
+    /* Button Text and suggestions button */
+    .stButton>button * {
+        color: #ffffff !important;
+    }
     
     /* Advanced Animations */
     @keyframes slideUpFade {
