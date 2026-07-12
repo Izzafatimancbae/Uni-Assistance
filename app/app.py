@@ -68,6 +68,11 @@ st.markdown("""
         border: none !important;
     }
     
+    /* Hide the radio button circles/inputs */
+    div[role="radiogroup"] label > div:first-child {
+        display: none !important;
+    }
+    
     /* Advanced Animations */
     @keyframes slideUpFade {
         0% { opacity: 0; transform: translateY(30px); }
